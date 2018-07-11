@@ -11,3 +11,11 @@ class Hash
     return new_array
   end
 end
+
+=begin
+class Hash
+  def keys_of(*arguments)
+    map { |key, value| arguments.include?(value) ? key : nil}.compact
+  end
+end
+=end
